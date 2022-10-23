@@ -150,7 +150,7 @@ elif cat /etc/os-release | grep PRETTY_NAME | grep "CentOS Linux 8"; then
     firewall-cmd --reload
 elif cat /etc/os-release | grep PRETTY_NAME | grep "Debian GNU/Linux 11 (bullseye)"; then
     /usr/bin/apt update
-    /usr/bin/apt -y install apache2-utils squid3
+    /usr/bin/apt -y install apache2-utils squid
     touch /etc/squid/passwd
     /bin/rm -f /etc/squid/squid.conf
     /usr/bin/touch /etc/squid/blacklist.acl
